@@ -1,0 +1,28 @@
+backend/.env
+frontend/node_modules
+backend/.venv
+backend/venv
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Build artifacts and logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor backups
+*~
+*.swp
+
+__pycache__/
+.env
