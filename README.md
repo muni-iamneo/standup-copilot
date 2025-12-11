@@ -1,54 +1,117 @@
-# 🤖 StandupAI
+# 🚀 StandupCopilot
 
 <div align="center">
 
-![StandupAI Banner](https://img.shields.io/badge/StandupAI-AI%20Powered%20Standups-6366f1?style=for-the-badge&logo=robot&logoColor=white)
+![StandupCopilot Banner](https://img.shields.io/badge/StandupCopilot-AI%20Voice%20Standups-6366f1?style=for-the-badge&logo=robot&logoColor=white)
 
-**AI-Powered Standup Automation Platform**
+**AI-Powered Voice Standup Meetings with Real-Time Integration**
 
-Automate your daily standups with Linear integration, Slack notifications, Jitsi meetings, and intelligent issue tracking powered by AI.
+Transform your daily standups with AI voice facilitation, automatic Linear updates, and intelligent Slack summaries.
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![ElevenLabs](https://img.shields.io/badge/ElevenLabs-Voice%20AI-black?style=flat-square)](https://elevenlabs.io/)
+[![Jitsi](https://img.shields.io/badge/Jitsi-Meet-97979A?style=flat-square&logo=jitsi)](https://jitsi.org/)
 
 </div>
 
 ---
 
+## ✨ What is StandupCopilot?
+
+StandupCopilot is an **AI-powered standup automation platform** that conducts voice-based standup meetings using ElevenLabs AI, automatically extracts updates, posts them to Linear, and sends beautiful summaries to Slack. No more manual note-taking or forgotten updates!
+
+### 🎯 Key Highlights
+
+- 🎙️ **AI Voice Agent** conducts standups via Jitsi video calls
+- 📝 **Automatic Transcription** of all conversations
+- 🔄 **Real-time Linear Updates** with comments and status changes
+- 📊 **Intelligent Slack Summaries** in digest format
+- 🤖 **LLM-Powered Extraction** using Claude or GPT-4
+- 📅 **Scheduled Automation** with APScheduler
+
+---
+
 ## 🌟 Features
 
-### 📋 **Complete Standup Automation**
-- Schedule standups with team, time, and channel configuration
-- Auto-fetch active issues from Linear or manually select specific ones
-- Automatic Jitsi meeting URL generation
-- Slack notifications with rich formatting
+### 🎤 Voice-First Standup Experience
+- **ElevenLabs AI Agent** asks team members about their assigned issues
+- **Natural Conversation** - speak naturally, AI understands context
+- **Real-time Transcription** - see what's being discussed live
+- **Jitsi Video Integration** - optional video for remote teams
+- **WebSocket Audio Streaming** - low-latency voice interaction
 
-### 🧠 **AI-Powered Intelligence**
-- ElevenLabs integration for AI voice facilitation
-- LLM-based transcript extraction (OpenAI GPT-4 / Anthropic Claude)
-- Automatic status detection and blocker identification
-- Smart escalation recommendations
+### 🧠 Intelligent Processing
+- **LLM Extraction** - Claude Haiku 4.5 or GPT-4 extracts structured updates
+- **Automatic Issue Matching** - links discussions to Linear issues
+- **Blocker Detection** - identifies and flags blockers automatically
+- **Escalation Recommendations** - suggests when issues need escalation
+- **Status Inference** - determines issue status from conversation
 
-### 📊 **Real-Time Linear Updates**
-- Automatic comments posted to Linear issues
-- Status updates based on standup discussions
-- Automatic escalation ticket creation
-- Full audit trail of all updates
+### � Linear Integration
+- **Auto-fetch Active Issues** - pulls issues assigned to team members
+- **Post Comments** - adds standup updates as Linear comments
+- **Status Updates** - updates issue status based on discussion
+- **Escalation Tickets** - creates new tickets for escalated issues
+- **Full Audit Trail** - tracks all automated changes
 
-### 📈 **Comprehensive Analytics**
-- Dashboard with key metrics
-- Blocked issues trend analysis
-- Escalation tracking over time
-- Team performance insights
+### � Slack Integration
+- **Standup Notifications** - alerts team when standup starts
+- **Simple Digest Format** - clean, readable summary format:
+  ```
+  📋 Daily Standup Digest — Dec 11
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  
+  Issue: NEO-10 (Rate Limit UI changes)
+  Status: Progressing
+  ETA: Today EOD
+  Blockers: None
+  Action: Complete styling
+  Working Person: manikandan@iamneo.ai
+  ```
+- **Channel Notifications** - posts to configured Slack channels
+- **Rich Formatting** - uses Slack markdown for clarity
 
-### 📧 **PM Summary Generation**
-- Automatic summary generation after standup completion
-- Slack DM delivery to PMs
-- Beautiful HTML email reports
-- Progress, blocked, and at-risk categorization
+### 📊 Dashboard & Analytics
+- **Beautiful Blue Gradient Hero** - modern, professional UI
+- **Real-time Stats** - total standups, active count
+- **Active Standup Cards** - join ongoing meetings
+- **Upcoming Schedule** - see what's next
+- **Clean White Cards** - easy-to-read design
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+- **FastAPI** - Modern Python web framework
+- **PostgreSQL** - Relational database
+- **SQLAlchemy** - ORM
+- **APScheduler** - Job scheduling
+- **WebSockets** - Real-time audio streaming
+- **httpx** - Async HTTP client
+
+### Frontend
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Vite** - Build tool
+- **Tailwind CSS** - Styling
+- **React Router** - Navigation
+- **Lucide Icons** - Icon library
+
+### AI & Voice
+- **ElevenLabs** - Conversational AI agent
+- **Anthropic Claude Haiku 4.5** - LLM reasoning
+- **OpenAI GPT-4** - Alternative LLM
+- **WebRTC** - Audio capture
+
+### Integrations
+- **Linear API** - Issue tracking (GraphQL)
+- **Slack API** - Team communication
+- **Jitsi Meet** - Video conferencing
+- **8x8 Jitsi** - Hosted Jitsi service
 
 ---
 
@@ -56,29 +119,37 @@ Automate your daily standups with Linear integration, Slack notifications, Jitsi
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                        StandupAI Platform                        │
+│                     StandupCopilot Platform                      │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐      │
 │  │   React UI   │◄──►│  FastAPI     │◄──►│  PostgreSQL  │      │
-│  │  (Frontend)  │    │  (Backend)   │    │  (Database)  │      │
-│  └──────────────┘    └──────────────┘    └──────────────┘      │
+│  │  TypeScript  │    │   Python     │    │   Database   │      │
+│  └──────┬───────┘    └──────┬───────┘    └──────────────┘      │
 │         │                   │                                    │
-│         │                   ▼                                    │
-│         │    ┌─────────────────────────────────────────┐        │
-│         │    │           External Services             │        │
-│         │    ├─────────┬─────────┬─────────┬──────────┤        │
-│         │    │ Linear  │  Slack  │ Jitsi   │ElevenLabs│        │
-│         │    │  API    │  API    │ Meet    │   TTS    │        │
-│         │    └─────────┴─────────┴─────────┴──────────┘        │
-│         │                   │                                    │
-│         │                   ▼                                    │
-│         │    ┌─────────────────────────────────────────┐        │
-│         │    │         AI/LLM Services                 │        │
-│         │    │   OpenAI GPT-4 / Anthropic Claude       │        │
-│         │    └─────────────────────────────────────────┘        │
-│         │                                                        │
+│         │ WebSocket         │ REST APIs                          │
+│         ▼                   ▼                                    │
+│  ┌─────────────────────────────────────────────────────┐        │
+│  │              External Services Layer                 │        │
+│  ├──────────┬──────────┬──────────┬──────────┬─────────┤        │
+│  │ ElevenLabs│  Linear  │  Slack   │  Jitsi   │ Claude  │        │
+│  │ Voice AI │   API    │   API    │   Meet   │ Haiku   │        │
+│  │ (Agent)  │ (GraphQL)│  (REST)  │  (WebRTC)│  4.5    │        │
+│  └──────────┴──────────┴──────────┴──────────┴─────────┘        │
+│                                                                  │
 └─────────────────────────────────────────────────────────────────┘
+```
+
+### Audio Flow Architecture
+
+```
+User Microphone → Browser → WebSocket → Backend → ElevenLabs Agent
+                                                         ↓
+                                                    AI Response
+                                                         ↓
+Backend ← WebSocket ← Browser ← Audio Playback ← ElevenLabs
+   ↓
+Transcript Storage → LLM Processing → Linear Updates → Slack Summary
 ```
 
 ---
@@ -86,49 +157,50 @@ Automate your daily standups with Linear integration, Slack notifications, Jitsi
 ## 📂 Project Structure
 
 ```
-standup-ai/
-├── backend/                          # FastAPI + PostgreSQL
+standup-copilot/
+├── backend/
 │   ├── app/
-│   │   ├── main.py                   # FastAPI app + CORS
-│   │   ├── config.py                 # Environment config
-│   │   ├── database.py               # PostgreSQL + SQLAlchemy
-│   │   ├── models.py                 # Database models
-│   │   ├── schemas.py                # Pydantic schemas
+│   │   ├── main.py                      # FastAPI app + WebSocket
+│   │   ├── config.py                    # Environment configuration
+│   │   ├── database.py                  # PostgreSQL connection
+│   │   ├── models.py                    # SQLAlchemy models
+│   │   ├── schemas.py                   # Pydantic schemas
 │   │   ├── services/
-│   │   │   ├── linear_service.py     # Linear GraphQL integration
-│   │   │   ├── slack_service.py      # Slack Web API
-│   │   │   ├── elevenlabs_service.py # ElevenLabs TTS/STT
-│   │   │   ├── jitsi_service.py      # Jitsi URL generation
-│   │   │   ├── reasoning_service.py  # LLM extraction
-│   │   │   ├── email_service.py      # SMTP email
-│   │   │   └── scheduler_service.py  # APScheduler
+│   │   │   ├── elevenlabs_service.py    # ElevenLabs integration
+│   │   │   ├── voice_endpoint.py        # Voice WebSocket handler
+│   │   │   ├── linear_service.py        # Linear GraphQL client
+│   │   │   ├── slack_service.py         # Slack Web API
+│   │   │   ├── reasoning_service.py     # LLM extraction (Claude/GPT)
+│   │   │   ├── standup_summary_service.py # Summary generation
+│   │   │   ├── jitsi_service.py         # Jitsi URL generation
+│   │   │   └── scheduler_service.py     # APScheduler jobs
 │   │   └── routes/
-│   │       ├── standup.py            # Standup CRUD + execution
-│   │       ├── config.py             # Configuration endpoints
-│   │       └── analytics.py          # Dashboard stats
-│   ├── requirements.txt
-│   ├── .env
-│   └── Dockerfile
+│   │       ├── standup.py               # Standup CRUD
+│   │       ├── config.py                # Configuration endpoints
+│   │       └── analytics.py             # Dashboard stats
+│   └── requirements.txt
 │
-└── frontend/                         # React TypeScript + Tailwind
+└── frontend/
     ├── src/
     │   ├── pages/
-    │   │   ├── DashboardPage.tsx
-    │   │   ├── ConfigPage.tsx
-    │   │   ├── StandupDetailPage.tsx
-    │   │   ├── HistoryPage.tsx
-    │   │   └── SettingsPage.tsx
+    │   │   ├── DashboardPage.tsx        # Blue gradient hero + stats
+    │   │   ├── ConfigPage.tsx           # Schedule standup wizard
+    │   │   ├── StandupMeetingPage.tsx   # Voice meeting UI (dark theme)
+    │   │   └── HistoryPage.tsx          # Past standups
     │   ├── components/
-    │   │   ├── Dashboard/
     │   │   ├── Common/
-    │   │   └── Config/
+    │   │   │   ├── Sidebar.tsx          # Dark sidebar with copilot icon
+    │   │   │   └── Navbar.tsx           # Light navbar
+    │   │   └── Dashboard/
+    │   ├── services/
+    │   │   └── audioPlaybackService.ts  # Audio playback management
     │   ├── api/
-    │   │   └── client.ts
+    │   │   └── client.ts                # API client
     │   └── types/
-    │       └── index.ts
-    ├── package.json
-    ├── tailwind.config.js
-    └── vite.config.ts
+    │       └── index.ts                 # TypeScript types
+    ├── assets/
+    │   └── copilot.svg                  # Custom logo
+    └── package.json
 ```
 
 ---
@@ -140,60 +212,63 @@ standup-ai/
 - **Python 3.10+**
 - **Node.js 18+**
 - **PostgreSQL 14+**
-- **npm or yarn**
+- **API Keys:**
+  - ElevenLabs API key
+  - Linear API key
+  - Slack Bot token
+  - Anthropic API key (or OpenAI)
+  - Jitsi domain (optional)
 
-### 1. Clone the Repository
+### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/standupai.git
-cd standupai
+git clone https://github.com/muni-iamneo/standup-copilot.git
+cd standup-copilot
 ```
 
 ### 2. Backend Setup
 
 ```bash
-# Navigate to backend directory
 cd backend
 
 # Create virtual environment
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate  # Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Set up PostgreSQL database
-createdb standupai
+# Create database
+createdb standupcopilot
 
-# Configure environment variables
+# Configure environment
 cp .env.example .env
 # Edit .env with your API keys
 
-# Run database migrations
+# Run migrations
 alembic upgrade head
 
-# Start the backend server
-uvicorn app.main:app --reload --port 8000
+# Start server
+python -m uvicorn app.main:app --reload --port 8000
 ```
 
 ### 3. Frontend Setup
 
 ```bash
-# Navigate to frontend directory
 cd frontend
 
 # Install dependencies
 npm install
 
-# Start the development server
+# Start dev server
 npm run dev
 ```
 
-### 4. Access the Application
+### 4. Access Application
 
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:8000
-- **API Documentation**: http://localhost:8000/docs
+- **API Docs**: http://localhost:8000/docs
 
 ---
 
@@ -201,211 +276,187 @@ npm run dev
 
 ### Environment Variables
 
-Create a `.env` file in the `backend` directory:
+Create `backend/.env`:
 
 ```env
 # Application
-APP_NAME=StandupAI
-APP_VERSION=1.0.0
+APP_NAME=StandupCopilot
 DEBUG=true
 
 # Database
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/standupai
+DATABASE_URL=postgresql://postgres:password@localhost:5432/standupcopilot
 
-# Linear Integration
+# Linear
 LINEAR_API_KEY=lin_api_xxxxxxxxxxxxx
 LINEAR_API_URL=https://api.linear.app/graphql
 
-# Slack Integration
+# Slack
+SLACK_BOT_TOKEN=xoxb-xxxxxxxxxxxxx
 SLACK_APP_ID=your_app_id
 SLACK_CLIENT_ID=your_client_id
 SLACK_CLIENT_SECRET=your_client_secret
-SLACK_SIGNING_SECRET=your_signing_secret
-SLACK_BOT_TOKEN=xoxb-xxxxxxxxxxxxx
 
-# ElevenLabs Integration
+# ElevenLabs
 ELEVENLABS_API_KEY=sk_xxxxxxxxxxxxx
-ELEVENLABS_VOICE_ID=21m00Tcm4TlvDq8ikWAM
+ELEVENLABS_AGENT_ID=agent_xxxxxxxxxxxxx
 
-# Jitsi Configuration
-JITSI_DOMAIN=meet.jit.si
+# Jitsi (optional - uses 8x8 hosted)
+JITSI_DOMAIN=8x8.vc
+JITSI_APP_ID=vpaas-magic-cookie-xxxxxxxxxxxxx
 
-# Email Configuration
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_USER=your_email@gmail.com
-SMTP_PASSWORD=your_app_password
-EMAIL_FROM=standupai@example.com
-
-# LLM Configuration
-OPENAI_API_KEY=sk-xxxxxxxxxxxxx
+# LLM (choose one)
 ANTHROPIC_API_KEY=sk-ant-xxxxxxxxxxxxx
-LLM_PROVIDER=openai
+OPENAI_API_KEY=sk-xxxxxxxxxxxxx
+LLM_PROVIDER=anthropic  # or "openai"
 
 # CORS
-CORS_ORIGINS=["http://localhost:3000","http://localhost:5173"]
+CORS_ORIGINS=["http://localhost:5173"]
 ```
+
+### ElevenLabs Agent Configuration
+
+Configure your ElevenLabs agent with:
+
+**System Prompt:**
+```
+You are Neo, an AI standup moderator.
+
+TEAM ISSUES:
+{{issues_list}}
+
+RULES:
+1. Ask for user's name
+2. Match their name to ASSIGNEE field
+3. Use EXACT issue ID and TITLE from the list
+4. NEVER invent fake issues
+5. Discuss: status, blockers, ETA
+```
+
+**Dynamic Variables:**
+- `issues_list` - Populated at runtime with team issues
+
+See `docs/elevenlabs_agent_config.md` for full configuration.
+
+---
+
+## 🔄 How It Works
+
+### 1. Schedule Standup
+1. Select Linear team
+2. Choose Slack channel
+3. Pick date/time
+4. Select team members
+5. Auto-fetch or manually select issues
+
+### 2. Standup Execution
+1. At scheduled time, Slack notification sent
+2. Team joins Jitsi meeting
+3. AI agent starts conversation
+4. Agent asks about each assigned issue
+5. Team members respond naturally
+6. Real-time transcription displayed
+
+### 3. Automatic Processing
+1. LLM extracts structured data from conversation
+2. Matches discussions to Linear issues
+3. Posts comments to Linear
+4. Updates issue statuses
+5. Creates escalation tickets if needed
+
+### 4. Summary Generation
+1. Generates digest format summary
+2. Posts to Slack channel
+3. Stores in database
+4. Available in dashboard
+
+---
+
+## � Slack Summary Format
+
+```
+📋 Daily Standup Digest — Dec 11
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Issue: NEO-12 (Backend - Ops & Telemetry)
+Status: Progressing
+ETA: End of week
+Blockers: None
+Action: Complete Prometheus integration
+Working Person: muniyappan.mani@iamneo.ai
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Issue: NEO-10 (Rate Limit UI changes)
+Status: Blocked 🔴
+Blockers: Waiting for API endpoint
+Working Person: manikandan@iamneo.ai
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚨 Escalations Created:
+• NEO-13: Created for NEO-10
+```
+
+---
+
+## 🎨 UI Design
+
+### Dashboard (Light Theme)
+- **Blue gradient hero** with StandupCopilot branding
+- **Stats cards** showing total standups and active count
+- **White cards** for active and upcoming standups
+- **Clean, professional** design
+
+### Meeting Page (Dark Theme)
+- **Dark background** (#0a0a0f, #0f0f1a)
+- **White text** for high contrast
+- **Jitsi video embed** for face-to-face
+- **Live transcript sidebar** showing conversation
+- **Voice controls** (mute, video, end call)
+
+### Sidebar
+- **Dark gradient** background
+- **Custom copilot icon** (purple SVG)
+- **Minimal navigation** (Dashboard, Schedule)
 
 ---
 
 ## 📖 API Documentation
 
-### Main Endpoints
+### Key Endpoints
 
-#### Standup Configuration
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/standups/configs` | Create standup configuration |
-| `GET` | `/api/standups/configs` | List all configurations |
-| `GET` | `/api/standups/configs/{id}` | Get specific configuration |
-| `PUT` | `/api/standups/configs/{id}` | Update configuration |
-| `DELETE` | `/api/standups/configs/{id}` | Delete configuration |
+#### Voice WebSocket
+```
+WS /standup/{id}/voice?team_id={team_id}&slack_channel_id={channel_id}
+```
+Handles real-time audio streaming and transcription.
 
-#### Standup Execution
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/standups/start/{config_id}` | Manually start standup |
-| `GET` | `/api/standups/{id}` | Get standup details |
-| `POST` | `/api/standups/{id}/complete` | Complete standup |
-| `POST` | `/api/standups/{id}/process-transcript` | Process developer transcript |
-| `POST` | `/api/standups/{id}/summary` | Generate PM summary |
+#### Standup Management
+- `POST /api/standups/configs` - Create configuration
+- `GET /api/standups/configs` - List configurations
+- `GET /api/analytics/dashboard` - Dashboard stats
+- `GET /api/analytics/active` - Active standups
 
-#### Analytics
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/analytics/dashboard` | Get dashboard stats |
-| `GET` | `/api/analytics/upcoming` | Get upcoming standups |
-| `GET` | `/api/analytics/active` | Get active standups |
-| `GET` | `/api/analytics/history` | Get standup history |
-| `GET` | `/api/analytics/trends/blocked` | Get blocked issues trend |
+#### Integration Health
+- `GET /api/config/health` - Check Linear/Slack connectivity
+- `GET /api/config/linear/teams` - Get Linear teams
+- `GET /api/config/slack/channels` - Get Slack channels
 
-#### Integrations
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/config/linear/teams` | Get Linear teams |
-| `GET` | `/api/config/linear/teams/{id}/members` | Get team members |
-| `GET` | `/api/config/linear/teams/{id}/issues` | Get team issues |
-| `GET` | `/api/config/slack/channels` | Get Slack channels |
-| `GET` | `/api/config/health` | Check integration health |
+Full API docs: http://localhost:8000/docs
 
 ---
 
-## 🔄 User Flow
-
-### 1. Configuration Phase
-1. User logs into dashboard
-2. Navigates to "Schedule Standup"
-3. Selects Linear team and Slack channel
-4. Chooses date and time
-5. Selects team members
-6. Configures issue fetching (auto or manual)
-7. Clicks "Schedule Standup"
-
-### 2. Notification Phase
-- At scheduled time, system triggers
-- Generates unique Jitsi meeting URL
-- Sends formatted Slack notification
-- Team members join the meeting
-
-### 3. Standup Execution
-- AI agent facilitates discussion
-- Asks about each issue status
-- Records responses and extracts data
-- Identifies blockers and escalations
-
-### 4. Auto-Update Phase
-- Posts comments to Linear issues
-- Updates issue statuses
-- Creates escalation tickets if needed
-- Stores all updates in database
-
-### 5. PM Summary
-- Generates comprehensive summary
-- Categorizes issues by status
-- Sends via Slack DM and email
-- Available in dashboard
-
----
-
-## 🗄️ Database Schema
-
-### Tables
-
-#### `standup_configs`
-| Column | Type | Description |
-|--------|------|-------------|
-| id | SERIAL | Primary key |
-| team_id | VARCHAR | Linear team ID |
-| team_name | VARCHAR | Team display name |
-| scheduled_time | TIMESTAMP | When to run |
-| slack_channel_id | VARCHAR | Target channel |
-| selected_members | JSONB | Team members array |
-| auto_fetch_issues | BOOLEAN | Auto-fetch flag |
-| status | VARCHAR | scheduled/completed/cancelled |
-
-#### `standups`
-| Column | Type | Description |
-|--------|------|-------------|
-| id | SERIAL | Primary key |
-| config_id | INTEGER | FK to configs |
-| jitsi_url | VARCHAR | Meeting URL |
-| status | VARCHAR | Status |
-| total_issues | INTEGER | Issue count |
-| duration_minutes | INTEGER | Duration |
-
-#### `issue_updates`
-| Column | Type | Description |
-|--------|------|-------------|
-| id | SERIAL | Primary key |
-| standup_id | INTEGER | FK to standups |
-| linear_issue_id | VARCHAR | e.g., "ENG-123" |
-| status | VARCHAR | Issue status |
-| blockers | TEXT | Blocker details |
-| escalation_needed | BOOLEAN | Needs escalation |
-
-#### `pm_summaries`
-| Column | Type | Description |
-|--------|------|-------------|
-| id | SERIAL | Primary key |
-| standup_id | INTEGER | FK to standups |
-| progress_issues | JSONB | Progressing issues |
-| blocked_issues | JSONB | Blocked issues |
-| escalations_created | JSONB | New escalations |
-
----
-
-## 🎨 UI Screenshots
-
-### Dashboard
-- Real-time stats overview
-- Upcoming and active standups
-- Analytics charts
-- Recent history
-
-### Schedule Standup
-- Multi-step wizard
-- Team and channel selection
-- Member picker
-- Issue configuration
-
-### Standup Details
-- Issue updates with status
-- Blocker and dependency tracking
-- PM summary view
-- Escalation indicators
-
----
-
-## 🛠️ Development
+## � Development
 
 ### Running Tests
 
 ```bash
-# Backend tests
+# Backend
 cd backend
 pytest
 
-# Frontend tests
+# Frontend
 cd frontend
 npm test
 ```
@@ -415,7 +466,7 @@ npm test
 ```bash
 # Backend
 cd backend
-docker build -t standupai-backend .
+docker build -t standupcopilot-backend .
 
 # Frontend
 cd frontend
@@ -424,30 +475,39 @@ npm run build
 
 ---
 
-## 📝 License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
----
-
 ## 🤝 Contributing
 
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details.
+Contributions welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ---
 
-## 📞 Support
+## 📝 License
 
-- 📧 Email: support@standupai.com
-- 💬 Discord: [Join our community](https://discord.gg/standupai)
-- 📖 Docs: [Documentation](https://docs.standupai.com)
+MIT License - see LICENSE file for details.
+
+---
+
+## � Acknowledgments
+
+Built with amazing tools:
+- [ElevenLabs](https://elevenlabs.io/) - Conversational AI
+- [Linear](https://linear.app/) - Issue tracking
+- [Slack](https://slack.com/) - Team communication
+- [Jitsi](https://jitsi.org/) - Video conferencing
+- [Anthropic](https://anthropic.com/) - Claude AI
+- [FastAPI](https://fastapi.tiangolo.com/) - Python framework
+- [React](https://react.dev/) - UI framework
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by the StandupAI Team**
+**Built with ❤️ for better standups**
 
-[Website](https://standupai.com) • [Documentation](https://docs.standupai.com) • [Twitter](https://twitter.com/standupai)
+[Report Bug](https://github.com/muni-iamneo/standup-copilot/issues) • [Request Feature](https://github.com/muni-iamneo/standup-copilot/issues)
 
 </div>
