@@ -44,7 +44,6 @@ class Standup(Base):
     completed_issues = Column(Integer, default=0)
     duration_minutes = Column(Integer)
     
-    # Relationships
     config = relationship("StandupConfig", back_populates="standups")
     issue_updates = relationship("IssueUpdate", back_populates="standup")
     pm_summary = relationship("PMSummary", back_populates="standup", uselist=False)

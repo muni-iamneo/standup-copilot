@@ -14,7 +14,6 @@ const navigation = [
 export default function Sidebar() {
     return (
         <aside className="fixed left-0 top-0 h-screen w-64 glass-dark flex flex-col z-50">
-            {/* Logo */}
             <div className="p-6 border-b border-white/10">
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 flex items-center justify-center">
@@ -27,7 +26,6 @@ export default function Sidebar() {
                 </div>
             </div>
 
-            {/* Navigation */}
             <nav className="flex-1 p-4 space-y-2">
                 {navigation.map((item) => (
                     <NavLink

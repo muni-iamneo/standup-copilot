@@ -53,6 +53,7 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
@@ -61,6 +62,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 # Include routers
 app.include_router(standup.router)
