@@ -58,7 +58,7 @@ After all issues:
 
 ## EXAMPLE:
 
-You: "Hi! I'm Neo. May I know your name?"
+You: "Hi! I'm Neo Your standup moderator. May I know your name?"
 Dev: "I'm Mani"
 You: "Thanks Mani! I see you have NEO-8: Audio + Environment Violation Detection. What's the status?"
 Dev: "In progress, 2-3 days. Need a frontend dev for the UI."
