@@ -29,7 +29,7 @@ StandupCopilot is an **AI-powered standup automation platform** that conducts vo
 - 📝 **Automatic Transcription** of all conversations
 - 🔄 **Real-time Linear Updates** with comments and status changes
 - 📊 **Intelligent Slack Summaries** in digest format
-- 🤖 **LLM-Powered Extraction** using Claude or GPT-4
+- 🤖 **LLM-Powered Extraction** using Claude or Gemini 3
 - 📅 **Scheduled Automation** with APScheduler
 
 ---
@@ -44,7 +44,7 @@ StandupCopilot is an **AI-powered standup automation platform** that conducts vo
 - **WebSocket Audio Streaming** - low-latency voice interaction
 
 ### 🧠 Intelligent Processing
-- **LLM Extraction** - Claude Haiku 4.5 or GPT-4 extracts structured updates
+- **LLM Extraction** - Claude Haiku 4.5 or Gemini 3 extracts structured updates
 - **Automatic Issue Matching** - links discussions to Linear issues
 - **Blocker Detection** - identifies and flags blockers automatically
 - **Escalation Recommendations** - suggests when issues need escalation
@@ -104,7 +104,7 @@ StandupCopilot is an **AI-powered standup automation platform** that conducts vo
 ### AI & Voice
 - **ElevenLabs** - Conversational AI agent
 - **Anthropic Claude Haiku 4.5** - LLM reasoning
-- **OpenAI GPT-4** - Alternative LLM
+- **Gemini 3** - Alternative LLM
 - **WebRTC** - Audio capture
 
 ### Integrations
